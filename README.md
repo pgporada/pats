@@ -10,13 +10,20 @@ The PATS engine is `pats_engine.bash`. Each `test_whatever.bash` script should `
 
 To run a test script, simply issue
 
-    bash test_whatever.bash
-
-You will then see output such as
-
+    $ bash test_whatever.bash
     ok - Whatever is active
     ok - Whatever is running
     not ok - Whatever is accessible on port 9090
+
+You can also output in a somewhat TAPS style format
+
+    $ bash test_canned.bash -t
+    ..F..
+
+Assuming that I could show colors on Github, you can output in colors too!
+
+    $ bash test_canned -tc
+    ..F..   (but in colors!)
 
 - - - -
 # Music
